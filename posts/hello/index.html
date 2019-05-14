@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Hello hugo &middot; My New Hugo Site</title>
+  <title>Hello hugo &middot; 2hong 笔记</title>
 
   
   <link type="text/css" rel="stylesheet" href="https://zhong-yj.github.io/css/print.css" media="print">
@@ -30,9 +30,9 @@
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://zhong-yj.github.io/"><h1>My New Hugo Site</h1></a>
+      <a href="https://zhong-yj.github.io/"><h1>2hong 笔记</h1></a>
       <p class="lead">
-      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      纵火的青年\n迫近的时间<a href="https://github.com/zhong-yj/zhong-yj.github.io">@2hong</a>. 
       </p>
     </div>
 
@@ -57,18 +57,18 @@
 
 <p><strong>win安装hugo：</strong></p>
 
-<p>​       到<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>下载release版本的压缩包，解压后将hugo.exe的所在目录添加到环境变量。</p>
+<p>到<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>下载release版本的压缩包，解压后将hugo.exe的所在目录添加到环境变量。</p>
 
 <p><strong>测试hugo：</strong></p>
 
-<p>​       在cmd输入<code>hugo vesion</code>，如果安装成功，则有如下信息输出：</p>
+<p>在cmd输入<code>hugo vesion</code>，如果安装成功，则有如下信息输出：</p>
 
 <pre><code>Hugo Static Site Generator v0.55.5-A83256B9 windows/amd64 BuildDate: 2019-05-02T13:04:07Z
 </code></pre>
 
 <h3 id="建立博客">建立博客</h3>
 
-<p>本文以博主自己建立博客的代码为例，用到的    <strong>2hongBlog</strong>  和  <strong>zhong-yj</strong>  分别为博主的  <strong>博客本地文件夹名</strong>  和<strong>github username</strong>  ，在建博客时应更换成自己相应的名字。</p>
+<p>本文以博主自己建立博客的代码为例，用到的 <strong>2hongBlog</strong> 和 <strong>zhong-yj</strong> 分别为博主的 <strong>博客本地文件夹名</strong> 和<strong>github username</strong> ，在建博客时应更换成自己相应的名字。</p>
 
 <ol>
 <li><p>切换到你要建立博客的根目录下输入:</p>
@@ -77,17 +77,15 @@
 </code></pre></li>
 </ol>
 
-<p>成功后当前目录下会出现一个<code>2hongBlog</code>的文件夹。</p>
+<p>成功后当前目录下会出现一个<code>2hongBlog</code>的文件夹</p>
 
-<ol>
-<li><p>通过<code>git init</code>命令把这个目录变成Git可以管理的仓库：</p>
+<p>​   2. 通过<code>git init</code>命令把这个目录变成Git可以管理的仓库：</p>
 
 <pre><code>cd 2hongBlog
 git init
-</code></pre></li>
+</code></pre>
 
-<li><p>选择主题：</p></li>
-</ol>
+<p>​   3. 选择主题：</p>
 
 <p>到<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>选择一款自己喜欢的主题，这里以<code>hyde</code>这款主题为例，点进去里面有相应的git操作：</p>
 
@@ -108,7 +106,7 @@ git init
 
 <p>自己新建一个github repo，注意这里的repo name格式必须是：<code>github username.github.io</code></p>
 
-<p><img src="imgrepoName.png" alt="" /></p>
+<p><img src="img/repoName.png" alt="img" /></p>
 
 <p>然后将可以将baseURL更改成：</p>
 
@@ -125,7 +123,7 @@ git init
 <p>博客都保存在\content目录下，一般为了为了集中管理都放在/posts下。</p>
 
 <ol>
-<li><p>本地预览效果:</p>
+<li><p>在本地预览效果:</p>
 
 <pre><code>#切换到2hongBlog目录下
 hugo server -D
