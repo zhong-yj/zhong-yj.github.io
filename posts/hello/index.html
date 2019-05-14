@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Hello &middot; My New Hugo Site</title>
+  <title>Hello hugo &middot; My New Hugo Site</title>
 
   
   <link type="text/css" rel="stylesheet" href="https://zhong-yj.github.io/css/print.css" media="print">
@@ -49,9 +49,109 @@
 
     <main class="content container">
     <div class="post">
-  <h1>Hello</h1>
+  <h1>Hello hugo</h1>
   <time datetime=2019-05-14T14:11:22&#43;0800 class="post-date">Tue, May 14, 2019</time>
-  <p>##lalala</p>
+  
+
+<h2 id="hello-hugo">Hello hugo</h2>
+
+<p><strong>win安装hugo：</strong></p>
+
+<p>​       到<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>下载release版本的压缩包，解压后将hugo.exe的所在目录添加到环境变量。</p>
+
+<p><strong>测试hugo：</strong></p>
+
+<p>​       在cmd输入<code>hugo vesion</code>，如果安装成功，则有如下信息输出：</p>
+
+<pre><code>Hugo Static Site Generator v0.55.5-A83256B9 windows/amd64 BuildDate: 2019-05-02T13:04:07Z
+</code></pre>
+
+<h3 id="建立博客">建立博客</h3>
+
+<p>本文以博主自己建立博客的代码为例，用到的    <strong>2hongBlog</strong>  和  <strong>zhong-yj</strong>  分别为博主的  <strong>博客本地文件夹名</strong>  和<strong>github username</strong>  ，在建博客时应更换成自己相应的名字。</p>
+
+<ol>
+<li><p>切换到你要建立博客的根目录下输入:</p>
+
+<pre><code>hugo new site 2hongBlog
+</code></pre></li>
+</ol>
+
+<p>成功后当前目录下会出现一个<code>2hongBlog</code>的文件夹。</p>
+
+<ol>
+<li><p>通过<code>git init</code>命令把这个目录变成Git可以管理的仓库：</p>
+
+<pre><code>cd 2hongBlog
+git init
+</code></pre></li>
+
+<li><p>选择主题：</p></li>
+</ol>
+
+<p>到<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>选择一款自己喜欢的主题，这里以<code>hyde</code>这款主题为例，点进去里面有相应的git操作：</p>
+
+<pre><code>   cd themes
+   git clone https://github.com/spf13/hyde.git
+</code></pre>
+
+<ol>
+<li>配置config.toml文件：</li>
+</ol>
+
+<p>添加</p>
+
+<pre><code>   theme = &quot;hyde&quot;
+</code></pre>
+
+<p>将baseURL更改为自己的域名:</p>
+
+<p>自己新建一个github repo，注意这里的repo name格式必须是：<code>github username.github.io</code></p>
+
+<p><img src="imgrepoName.png" alt="" /></p>
+
+<p>然后将可以将baseURL更改成：</p>
+
+<pre><code>   baseUrl=&quot;https://zhong-yj.github.io/&quot; 
+</code></pre>
+
+<ol>
+<li><p>新建一篇markdown博文：</p>
+
+<pre><code>hugo new posts/hello.md           #会自动在/content下新建posts/hello.md
+</code></pre></li>
+</ol>
+
+<p>博客都保存在\content目录下，一般为了为了集中管理都放在/posts下。</p>
+
+<ol>
+<li><p>本地预览效果:</p>
+
+<pre><code>#切换到2hongBlog目录下
+hugo server -D
+</code></pre></li>
+</ol>
+
+<p>到浏览器输入<code>localhost:1313</code>即可看到效果。</p>
+
+<ol>
+<li><p>构建hugo网站:</p>
+
+<pre><code>hugo    #会生成博客的静态页面并将它们放到\public
+</code></pre></li>
+
+<li><p>将博客部署到远端：</p>
+
+<pre><code>cd public\
+git init
+git add .
+git commit -m &quot;hugo blog&quot;
+git remote add  git@github.com:zhong-yj/zhong-yj.github.io.git
+git push -u orinin master
+</code></pre></li>
+</ol>
+
+<p>现在就可以在线访问了，输入<code>zhong-yj.github.io</code>即可访问到自己博客。</p>
 
 </div>
 
