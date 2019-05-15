@@ -32,7 +32,7 @@
     <div class="sidebar-about">
       <a href="https://zhong-yj.github.io/"><h1>2hong 笔记</h1></a>
       <p class="lead">
-      纵火的青年\n迫近的时间<a href="https://github.com/zhong-yj/zhong-yj.github.io">@2hong</a>. 
+      纵火的青年<Br/>迫近的时间<a href="https://music.163.com/#/user/home?id=57435453">@2hong</a>. 
       </p>
     </div>
 
@@ -68,24 +68,24 @@
 
 <h3 id="建立博客">建立博客</h3>
 
+<hr />
+
 <p>本文以博主自己建立博客的代码为例，用到的 <strong>2hongBlog</strong> 和 <strong>zhong-yj</strong> 分别为博主的 <strong>博客本地文件夹名</strong> 和<strong>github username</strong> ，在建博客时应更换成自己相应的名字。</p>
 
 <ol>
-<li><p>切换到你要建立博客的根目录下输入:</p>
+<li><p><strong>切换到你要建立博客的根目录下输入:</strong></p>
 
 <pre><code>hugo new site 2hongBlog
 </code></pre></li>
-</ol>
 
-<p>成功后当前目录下会出现一个<code>2hongBlog</code>的文件夹</p>
-
-<p>​   2. 通过<code>git init</code>命令把这个目录变成Git可以管理的仓库：</p>
+<li><p><strong>通过<code>git init</code>命令把这个目录变成Git可以管理的仓库</strong></p>
 
 <pre><code>cd 2hongBlog
 git init
-</code></pre>
+</code></pre></li>
 
-<p>​   3. 选择主题：</p>
+<li><p><strong>选择主题：</strong></p></li>
+</ol>
 
 <p>到<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>选择一款自己喜欢的主题，这里以<code>hyde</code>这款主题为例，点进去里面有相应的git操作：</p>
 
@@ -94,7 +94,7 @@ git init
 </code></pre>
 
 <ol>
-<li>配置config.toml文件：</li>
+<li><strong>配置config.toml文件：</strong></li>
 </ol>
 
 <p>添加</p>
@@ -104,17 +104,17 @@ git init
 
 <p>将baseURL更改为自己的域名:</p>
 
-<p>自己新建一个github repo，注意这里的repo name格式必须是：<code>github username.github.io</code></p>
+<p>自己新建一个github repo，注意这里的repo name格式必须是：`github username.github.io</p>
 
 <p><img src="img/repoName.png" alt="img" /></p>
 
-<p>然后将可以将baseURL更改成：</p>
+<p><strong>然后将可以将baseURL更改成：</strong></p>
 
 <pre><code>   baseUrl=&quot;https://zhong-yj.github.io/&quot; 
 </code></pre>
 
 <ol>
-<li><p>新建一篇markdown博文：</p>
+<li><p><strong>新建一篇markdown博文：</strong></p>
 
 <pre><code>hugo new posts/hello.md           #会自动在/content下新建posts/hello.md
 </code></pre></li>
@@ -123,31 +123,29 @@ git init
 <p>博客都保存在\content目录下，一般为了为了集中管理都放在/posts下。</p>
 
 <ol>
-<li><p>在本地预览效果:</p>
+<li><p><strong>在本地预览效果:</strong></p>
 
 <pre><code>#切换到2hongBlog目录下
 hugo server -D
 </code></pre></li>
-</ol>
 
-<p>到浏览器输入<code>localhost:1313</code>即可看到效果。</p>
-
-<ol>
-<li><p>构建hugo网站:</p>
+<li><p><strong>构建hugo网站:</strong></p>
 
 <pre><code>hugo    #会生成博客的静态页面并将它们放到\public
 </code></pre></li>
 
-<li><p>将博客部署到远端：</p>
+<li><p><strong>将博客部署到远端：</strong></p>
 
 <pre><code>cd public\
 git init
 git add .
 git commit -m &quot;hugo blog&quot;
 git remote add orinin git@github.com:zhong-yj/zhong-yj.github.io.git
-git push -u orinin master
+git push -u orinin master 
 </code></pre></li>
 </ol>
+
+<p>第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
 
 <p>现在就可以在线访问了，输入<code>zhong-yj.github.io</code>即可访问到自己博客。</p>
 

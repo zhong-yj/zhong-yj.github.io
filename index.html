@@ -33,7 +33,7 @@
     <div class="sidebar-about">
       <a href="https://zhong-yj.github.io/"><h1>2hong 笔记</h1></a>
       <p class="lead">
-      纵火的青年\n迫近的时间<a href="https://github.com/zhong-yj/zhong-yj.github.io">@2hong</a>. 
+      纵火的青年<Br/>迫近的时间<a href="https://music.163.com/#/user/home?id=57435453">@2hong</a>. 
       </p>
     </div>
 
@@ -61,13 +61,14 @@
 在cmd输入hugo vesion，如果安装成功，则有如下信息输出：
 Hugo Static Site Generator v0.55.5-A83256B9 windows/amd64 BuildDate: 2019-05-02T13:04:07Z  建立博客 本文以博主自己建立博客的代码为例，用到的 2hongBlog 和 zhong-yj 分别为博主的 博客本地文件夹名 和github username ，在建博客时应更换成自己相应的名字。
  切换到你要建立博客的根目录下输入:
-hugo new site 2hongBlog   成功后当前目录下会出现一个2hongBlog的文件夹
-​ 2. 通过git init命令把这个目录变成Git可以管理的仓库：
-cd 2hongBlog git init  ​ 3. 选择主题：
-到https://themes.gohugo.io/选择一款自己喜欢的主题，这里以hyde这款主题为例，点进去里面有相应的git操作：
+hugo new site 2hongBlog  通过git init命令把这个目录变成Git可以管理的仓库
+cd 2hongBlog git init  选择主题：
+  到https://themes.gohugo.io/选择一款自己喜欢的主题，这里以hyde这款主题为例，点进去里面有相应的git操作：
  cd themes git clone https://github.com/spf13/hyde.git   配置config.toml文件：  添加
  theme = &quot;hyde&quot;  将baseURL更改为自己的域名:
-自己新建一个github repo，注意这里的repo name格式必须是：github username.github.io
+自己新建一个github repo，注意这里的repo name格式必须是：`github username.github.io
+然后将可以将baseURL更改成：
+ baseUrl=&quot;https://zhong-yj.github.io/&quot;   新建一篇markdown博文：
   
   <div class="read-more-link">
     <a href="/posts/hello/">Read More…</a>
