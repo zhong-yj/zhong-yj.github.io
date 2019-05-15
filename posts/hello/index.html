@@ -72,7 +72,7 @@
 
 <p>本文以博主自己建立博客的代码为例，用到的 <strong>2hongBlog</strong> 和 <strong>zhong-yj</strong> 分别为博主的 <strong>博客本地文件夹名</strong> 和<strong>github username</strong> ，在建博客时应更换成自己相应的名字。</p>
 
-<ol>
+<ul>
 <li><p><strong>切换到你要建立博客的根目录下输入:</strong></p>
 
 <pre><code>hugo new site 2hongBlog
@@ -85,7 +85,7 @@ git init
 </code></pre></li>
 
 <li><p><strong>选择主题：</strong></p></li>
-</ol>
+</ul>
 
 <p>到<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>选择一款自己喜欢的主题，这里以<code>hyde</code>这款主题为例，点进去里面有相应的git操作：</p>
 
@@ -93,9 +93,9 @@ git init
    git clone https://github.com/spf13/hyde.git
 </code></pre>
 
-<ol>
+<ul>
 <li><strong>配置config.toml文件：</strong></li>
-</ol>
+</ul>
 
 <p>添加</p>
 
@@ -104,7 +104,7 @@ git init
 
 <p>将baseURL更改为自己的域名:</p>
 
-<p>自己新建一个github repo，注意这里的repo name格式必须是：`github username.github.io</p>
+<p>自己新建一个github repo，注意这里的repo name格式必须是：<code>github username.github.io</code></p>
 
 <p><img src="img/repoName.png" alt="img" /></p>
 
@@ -113,16 +113,16 @@ git init
 <pre><code>   baseUrl=&quot;https://zhong-yj.github.io/&quot; 
 </code></pre>
 
-<ol>
+<ul>
 <li><p><strong>新建一篇markdown博文：</strong></p>
 
 <pre><code>hugo new posts/hello.md           #会自动在/content下新建posts/hello.md
 </code></pre></li>
-</ol>
+</ul>
 
 <p>博客都保存在\content目录下，一般为了为了集中管理都放在/posts下。</p>
 
-<ol>
+<ul>
 <li><p><strong>在本地预览效果:</strong></p>
 
 <pre><code>#切换到2hongBlog目录下
@@ -143,7 +143,7 @@ git commit -m &quot;hugo blog&quot;
 git remote add orinin git@github.com:zhong-yj/zhong-yj.github.io.git
 git push -u orinin master 
 </code></pre></li>
-</ol>
+</ul>
 
 <p>第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
 

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 2hong 笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 May 2019 14:11:22 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 10:42:48 +0800</lastBuildDate>
     
 	<atom:link href="https://zhong-yj.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://zhong-yj.github.io/posts/test/</link>
+      <pubDate>Wed, 15 May 2019 10:42:48 +0800</pubDate>
+      
+      <guid>https://zhong-yj.github.io/posts/test/</guid>
+      <description> 有序列表测试  敌视现实 虚构远方 东张西望 一无所长 四体不勤 五谷不分 文不能测字 武不能防身  </description>
+    </item>
     
     <item>
       <title>Hello hugo</title>
@@ -28,7 +37,7 @@ cd 2hongBlog git init  选择主题：
   到https://themes.gohugo.io/选择一款自己喜欢的主题，这里以hyde这款主题为例，点进去里面有相应的git操作：
  cd themes git clone https://github.com/spf13/hyde.git   配置config.toml文件：  添加
  theme = &amp;quot;hyde&amp;quot;  将baseURL更改为自己的域名:
-自己新建一个github repo，注意这里的repo name格式必须是：`github username.github.io
+自己新建一个github repo，注意这里的repo name格式必须是：github username.github.io
 然后将可以将baseURL更改成：
  baseUrl=&amp;quot;https://zhong-yj.github.io/&amp;quot;   新建一篇markdown博文：</description>
     </item>
