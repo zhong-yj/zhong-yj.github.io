@@ -25,6 +25,11 @@
   </url>
   
   <url>
+    <loc>https://zhong-yj.github.io/posts/%E5%B0%8F%E9%92%9F/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zhong-yj.github.io/categories/</loc>
     <priority>0</priority>
   </url>

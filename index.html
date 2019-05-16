@@ -67,19 +67,36 @@
 测试hugo：
 在cmd输入hugo vesion，如果安装成功，则有如下信息输出：
 Hugo Static Site Generator v0.55.5-A83256B9 windows/amd64 BuildDate: 2019-05-02T13:04:07Z  建立博客 本文以博主自己建立博客的代码为例，用到的 2hongBlog 和 zhong-yj 分别为博主的 博客本地文件夹名 和github username ，在建博客时应更换成自己相应的名字。
- 切换到你要建立博客的根目录下输入:
-hugo new site 2hongBlog  通过git init命令把这个目录变成Git可以管理的仓库
-cd 2hongBlog git init  选择主题：
-  到https://themes.gohugo.io/选择一款自己喜欢的主题，这里以hyde这款主题为例，点进去里面有相应的git操作：
- cd themes git clone https://github.com/spf13/hyde.git   配置config.toml文件：  添加
+1. 切换到你要建立博客的根目录下输入:
+hugo new site 2hongBlog  2. 通过git init命令把这个目录变成Git可以管理的仓库
+ cd 2hongBlog git init  3. 选择主题：
+​ 到https://themes.gohugo.io/选择一款自己喜欢的主题，这里以hyde这款主题为例，点进去里面有相应的git操作：
+ cd themes git clone https://github.com/spf13/hyde.git  4. 配置config.toml文件：
+添加
  theme = &quot;hyde&quot;  将baseURL更改为自己的域名:
 自己新建一个github repo，注意这里的repo name格式必须是：github username.github.io
 然后将可以将baseURL更改成：
- baseUrl=&quot;https://zhong-yj.github.io/&quot;   新建一篇markdown博文：
+ baseUrl=&quot;https://zhong-yj.github.io/&quot;  5.
   
   <div class="read-more-link">
     <a href="/posts/hello/">Read More…</a>
   </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://zhong-yj.github.io/posts/%E5%B0%8F%E9%92%9F/"></a>
+  </h1>
+  <time datetime="0001-01-01T00:00:00Z" class="post-date">Mon, Jan 1, 0001</time>
+  小钟 黑色的小钟指向十二点，
+一阵风将它轻轻掩盖。
+不陈旧了，也不明显。
+时间更加不接纳时间：
+那么多昏眩，那么多幼稚，
+都要从它的老人斑上过。
+窗外理应是不祥的，
+屋内照旧是黑暗，比较浅。
+我只是一个人，两个人，不超过三个。
+作者/清平
   
 </article>
 </div>
