@@ -6,10 +6,28 @@
     <description>Recent content on 2hong 笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2019 10:42:48 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 May 2019 15:39:19 +0800</lastBuildDate>
     
 	<atom:link href="https://zhong-yj.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>小钟</title>
+      <link>https://zhong-yj.github.io/posts/%E5%B0%8F%E9%92%9F/</link>
+      <pubDate>Thu, 16 May 2019 15:39:19 +0800</pubDate>
+      
+      <guid>https://zhong-yj.github.io/posts/%E5%B0%8F%E9%92%9F/</guid>
+      <description>小钟 黑色的小钟指向十二点，
+一阵风将它轻轻掩盖。
+不陈旧了，也不明显。
+时间更加不接纳时间：
+那么多昏眩，那么多幼稚，
+都要从它的老人斑上过。
+窗外理应是不祥的，
+屋内照旧是黑暗，比较浅。
+我只是一个人，两个人，不超过三个。
+作者/清平</description>
+    </item>
     
     <item>
       <title>Test</title>
@@ -41,24 +59,6 @@ hugo new site 2hongBlog  2. 通过git init命令把这个目录变成Git可以�
 自己新建一个github repo，注意这里的repo name格式必须是：github username.github.io
 然后将可以将baseURL更改成：
  baseUrl=&amp;quot;https://zhong-yj.github.io/&amp;quot;  5.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zhong-yj.github.io/posts/%E5%B0%8F%E9%92%9F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhong-yj.github.io/posts/%E5%B0%8F%E9%92%9F/</guid>
-      <description>小钟 黑色的小钟指向十二点，
-一阵风将它轻轻掩盖。
-不陈旧了，也不明显。
-时间更加不接纳时间：
-那么多昏眩，那么多幼稚，
-都要从它的老人斑上过。
-窗外理应是不祥的，
-屋内照旧是黑暗，比较浅。
-我只是一个人，两个人，不超过三个。
-作者/清平</description>
     </item>
     
   </channel>
